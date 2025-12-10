@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="style.css">
+    <title>Document Title</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jacques+Francois">
+    <script>
+        function calculateDate() {
+            let currentDate = new Date()
+            const year = currentDate.getFullYear();
+            const month = currentDate.getMonth() + 1; // Add 1 to get a 1-indexed month
+            const day = currentDate.getDate();
+            let end = new Date('2026-10-10')
+            let start = new Date(`${year}-${month}-${day}`)
+            let timeDifference = end - start;
+            let daysDifference = timeDifference / (1000 * 3600 * 24);
+            // console.log(start, end, daysDifference)
+            return Math.ceil(daysDifference);
+        }
+    </script>
+</head>
+<body>
+    <div class="site-container" id="home-title">
+        <div class="section main">
+            <img class="header-image" src="Media/topOfWeddingPage.PNG">
+            <p class="header-title">MARITZA & ANDREW</p>
+            <div class="date-container">
+                <p class="date">OCTOBER 10, 2026 • BIG BEAR, CA</p>
+                 
+                <!-- <p class="date">OCTOBER 10, 2026</p>
+                <p class="date">BIG BEAR, CA</p>
+            <p class="date"> -->
+            <script type="text/javascript">
+                document.write(calculateDate(), " DAYS TO GO!")
+            </script>
+            <!-- </p> -->
+            </div>
+        </div>
+        
+        <span class="menu sticky">
+        <ul class="menu-options" id="menu-options">
+            <li><a href="#home-title" class="option">Home</a></li>
+            <li><a href="#travel-title" class="option">Travel</a></li>
+            <li><a href="#registry-title" class="option">Registry</a></li>
+            <li><a href="#faq-title" class="option">FAQ</a></li>
+        </ul>
+        </span>
+        <img class="us-header-image" src="Media/header3.PNG">
+
+        <div class="section" id="travel-title">
+            <p class="sub-title">TRAVEL</p>
+            <p class="big-text">Where is the <strong>venue?</strong></p>
+            <p class="small-text">
+                Your wedding invitation will include the exact name and location of the venue, so stay tuned for that!
+                <br>Just be prepared to travel <strong>up the mountain</strong>, into the <strong>Big Bear area</strong> for the event.
+            </p>
+            <p class="big-text">Where can I <strong>stay overnight?</strong></p>
+            <p class="small-text">
+                There are plenty of 
+                <a class="sub-link" href="https://www.airbnb.com/s/Big-Bear--California/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJ3yNiUlOxxIARil2OT3SLF5Q&date_picker_type=calendar&search_type=AUTOSUGGEST" target=”_blank”>
+                    Airbnb's
+                </a>
+                to check out in the Big Bear area. There are also a number of budget-friendly hotels in the area, including the Holiday Inn Resort, the Bear Creek Resort, and the Motel 6.
+                The hotels in the area are a 10-15 minute drive from the venue.
+            </p>
+            <p class="big-text">Which <strong>airports</strong> are closest to the venue?</p>
+            <p class="small-text">
+                The Ontario International Airport (<strong>ONT</strong>) is <strong>58 miles</strong> (~1hr 20min drive) from the venue.
+                <br><br>
+                The Los Angeles International Airport (<strong>LAX</strong>) is <strong>117 miles</strong> (~2hr 15min drive) from the venue.
+            </p>
+        </div>
+
+        <div class="section" id="registry-title">
+            <p class="sub-title">REGISTRY</p>
+            <p class="small-text">
+            You can find our
+            <a class="sub-link" href="https://www.amazon.com/wedding/registry/39BSB0GSKPRA6" target="_blank">
+                registry on Amazon</a>!
+            </p>
+            
+            <img class="sub-image" src="Media/registry.PNG"> 
+            <p class="small-text">
+            Thank you for helping us kickstart the next chapter of our lives together ❤
+            </p>
+        </div>
+
+        <div class="section" id="faq-title">
+            <p class="sub-title">FAQ</p>
+            <p class="big-text">When will <strong>official invitations</strong> be sent out?</p>
+            <p class="small-text">
+                We will be sending out invitations about <strong>6 months before the wedding</strong> (likely sometime in April). 
+                The invitation will include information such as the exact venue location, the ceremony and reception times, and the RSVP link.
+            </p>
+
+            <p class="big-text">When is the <strong>RSVP deadline?</strong></p>
+            <p class="small-text">
+                Once you receive your invitation, please RSVP as soon as you can, preferrably <strong>by September 10th, 2026</strong> so we can plan accordingly. Please note the invitation will include a link to a Google Form where you can RSVP.
+            </p>
+
+            <p class="big-text">Is there a <strong>registry</strong>?</p>
+            <p class="small-text">
+                Yes! We would be happy to accept cash the day of the event, or any item from our 
+                <a class="sub-link" href="https://www.amazon.com/wedding/registry/39BSB0GSKPRA6" target=”_blank”>
+                    registry
+                </a> 
+                on the linked Amazon page.
+            </p>
+
+            <p class="big-text">What's the <strong>parking</strong> situation like at the venue?</p>
+            <p class="small-text">
+                The venue has an <strong>on-site</strong> parking area!
+            </p>
+
+            <p class="big-text">What's the <strong>weather</strong> going to be like?</p>
+            <p class="small-text">
+                The temperature in Big Bear ranges from <strong>40°F to 70°F</strong> during October. It doesn't tend to rain or snow, but please <strong>come prepared with layers</strong>, especially as it does feel chillier at night.
+            </p>
+
+            <p class="big-text">Is there a <strong>dress code</strong> for the wedding?</p>
+            <p class="small-text">
+                We recommend <strong>semi-formal/cocktail</strong> attire for the occasion. Just make sure to have comfy jackets/other layers prepared in case of cold or precipitation!
+            </p>
+
+            <p class="big-text">What is there to do in Big Bear?</p>
+            <p class="small-text">
+                There's lots to do in Big Bear! You can 
+                <a class=sub-link href="https://www.bigbearcoolcabins.com/blog/5-best-fishing-spots-big-bear-lake" target=”_blank”>fish</a> at a variety of places including Boulder Bay, take a 
+                <a class="sub-link" href="https://www.bigbear.com/things-to-do/big-bear-trails/" target=”_blank”>
+                    hike
+                </a> at any one of its gorgeous trails, have a stroll along the
+                <a class="sub-link" href="https://www.discoverbigbearlake.com/discover/discovering-the-charming-village-in-big-bear" target=”_blank”>
+                    Village
+                </a>
+                to shop for souvenirs and have a bite to eat, or even go to 
+                <a class="sub-link" href="https://bigbearevents.com/oktoberfest/" target=”_blank”>Oktoberfest</a>
+                at Wyatt's Grill & Saloon!
+            </p>
+
+        </div>
+        <div class="bottom">
+            <hr>
+            <p class="initials">M&A</p>
+            <hr>
+            <p>10.10.2026</p>
+        </div>
+        <img class="bottom-image" src="Media/bottomPic.PNG">  
+    </div>
+</body>
+</html>
